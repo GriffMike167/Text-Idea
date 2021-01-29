@@ -4,6 +4,8 @@ export type RootStackParamList = {
   Contacts: undefined;
   Chat: undefined;
   ChatRoom: undefined
+  Camera: undefined;
+  Calls: undefined
 };
 
 export type MainTabParamList = {

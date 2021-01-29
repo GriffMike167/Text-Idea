@@ -10,7 +10,17 @@ const styles = StyleSheet.create ({
     container: {
         flexDirection: 'row',
         width: '100%',
-        padding: 7
+        padding: 7, 
+        backgroundColor: 'white',
+        color: 'white',
+         shadowColor:'#000',
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.1,
+        shadowRadius: 1.60
+        
     
     },
     leftContainer: {
@@ -20,12 +30,15 @@ const styles = StyleSheet.create ({
 
     },
     middleContainer: {
-        justifyContent: 'space-between'
+        justifyContent: 'space-around',
+       
+     
     },
+  
     username: {
         fontWeight: 'bold',
         fontSize: 18,
-        fontFamily: 'American Typewritter"'
+        color: '#696969'
     },
     content: {
         fontWeight: 'normal',
@@ -42,7 +55,10 @@ const styles = StyleSheet.create ({
 
     },
     time: {
-        color: 'grey'
+        color: '#696969'
+    },
+    lastMessage: {
+        color: '#696969'
     }
 
 })

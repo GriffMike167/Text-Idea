@@ -46,6 +46,105 @@ export default [{
     lastMessage: {
         id:'m3',
         content:'You need a ticket for tomorrows game?',
-        createdAt: '2020-01-17T16:51:00.000z'
+         createdAt: '2020-01-17T16:51:00.000z'
     }
-}]
+},
+{
+    
+        id: '4',
+        users: [{
+            id:'u1',
+            name: 'Michael',
+            imageUri: '/Users/Michael/repos/polyTextual/polyTextual/20.jpeg'
+        },{
+            id:'u5',
+            name:'Mom',
+            imageUri:'/Users/Michael/repos/polyTextual/polyTextual/16.jpeg'
+        }],
+        lastMessage: {
+            id:'m4',
+            content:'You need a ticket for tomorrows game?',
+            createdAt: '2020-01-17T16:51:00.000z'
+        },
+
+},
+{
+    
+    id: '5',
+    users: [{
+        id:'u1',
+        name: 'Michael',
+        imageUri: '/Users/Michael/repos/polyTextual/polyTextual/20.jpeg'
+    },{
+        id:'u6',
+        name:'Dad',
+        imageUri:'/Users/Michael/repos/polyTextual/polyTextual/16.jpeg'
+    }],
+    lastMessage: {
+        id:'m5',
+        content:'You need a ticket for tomorrows game?',
+        createdAt: '2020-01-17T16:51:00.000z'
+    },
+
+},
+{
+    
+    id: '6',
+    users: [{
+        id:'u1',
+        name: 'Michael',
+        imageUri: '/Users/Michael/repos/polyTextual/polyTextual/20.jpeg'
+    },{
+        id:'u7',
+        name:'Peyton',
+        imageUri:'/Users/Michael/repos/polyTextual/polyTextual/16.jpeg'
+    }],
+    lastMessage: {
+        id:'m6',
+        content:'You need a ticket for tomorrows game?',
+        createdAt: '2020-01-17T16:51:00.000z'
+    },
+
+},
+{
+    
+    id: '7',
+    users: [{
+        id:'u1',
+        name: 'Michael',
+        imageUri: '/Users/Michael/repos/polyTextual/polyTextual/20.jpeg'
+    },{
+        id:'u8',
+        name:'Tom',
+        imageUri:'/Users/Michael/repos/polyTextual/polyTextual/16.jpeg'
+    }],
+    lastMessage: {
+        id:'m7',
+        content:'You need a ticket for tomorrows game?',
+        createdAt: '2020-01-17T16:51:00.000z'
+    },
+
+},
+{
+    
+    id: '8',
+    users: [{
+        id:'u1',
+        name: 'Michael',
+        imageUri: '/Users/Michael/repos/polyTextual/polyTextual/20.jpeg'
+    },{
+        id:'u9',
+        name:'Jay',
+        imageUri:'/Users/Michael/repos/polyTextual/polyTextual/16.jpeg'
+    }],
+    lastMessage: {
+        id:'m8',
+        content:'You need a ticket for tomorrows game?',
+        createdAt: '2020-01-17T16:51:00.000z'
+    },
+
+},
+
+
+
+]   

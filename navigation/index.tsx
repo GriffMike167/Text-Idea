@@ -49,9 +49,10 @@ function RootNavigator() {
               width:60,
               justifyContent: 'space-between',
               marginRight: 10,
+              
             }}>
-              <Octicons name="search" size={24} color='black'/>
-              <MaterialCommunityIcons name='dots-horizontal' size={24} color='black'/>
+              <Octicons name="search" size={24} color='#a9a9a9'/>
+              <MaterialCommunityIcons name='dots-horizontal' size={24} color='#a9a9a9'/>
             </View>
           )
         }}/>
