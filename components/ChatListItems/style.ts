@@ -37,12 +37,12 @@ const styles = StyleSheet.create ({
   
     username: {
         fontWeight: 'bold',
-        fontSize: 18,
+        fontSize: 16,
         color: '#696969'
     },
     content: {
         fontWeight: 'normal',
-        fontSize: 16
+        fontSize: 20
     },
     loadingcomponent: {
         width: '100%',
