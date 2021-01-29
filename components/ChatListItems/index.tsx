@@ -12,7 +12,8 @@ export type ChatListItemProps = {
 
 const ChatListItem = (props: ChatListItemProps) => {
     const { chatRoom } = props;
-    const user = chatRoom.users[1]
+    const user = chatRoom.users[1];
+    console.log(user.imageUri)
     return (
         <View style={styles.container}>
             <Image source={{ uri: user.imageUri }} style={styles.userUri}/>

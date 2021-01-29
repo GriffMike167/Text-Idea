@@ -50,8 +50,8 @@ function RootNavigator() {
               justifyContent: 'space-between',
               marginRight: 10,
             }}>
-              <Octicons name="search" size={24} color='white'/>
-              <MaterialCommunityIcons name='dots-horizontal' size={24} color='white'/>
+              <Octicons name="search" size={24} color='black'/>
+              <MaterialCommunityIcons name='dots-horizontal' size={24} color='black'/>
             </View>
           )
         }}/>
