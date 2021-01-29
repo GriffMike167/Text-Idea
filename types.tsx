@@ -6,13 +6,13 @@ export type RootStackParamList = {
   ChatRoom: undefined
 };
 
-export type BottomTabParamList = {
+export type MainTabParamList = {
   TabOne: undefined;
   TabTwo: undefined;
-  LOGIN: undefined
-  Chat: undefined;
-  CONTACTS: undefined;
-  CAMERA: undefined
+  login: undefined
+  chat: undefined;
+  staus: undefined;
+  call: undefined
 };
 
 export type TabOneParamList = {

@@ -1,54 +1,74 @@
 import { Ionicons } from '@expo/vector-icons';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createMainTabNavigator } from '@react-navigation/Main-tabs';
+import { createMateriailTopTabNavigator } from '@react-navigation/material-top-tabs'
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
-import ChatScreen from '../screens/ChatScreen';
+// import ChatScreen from '../screens/ChatScreen';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
-import { BottomTabParamList, TabOneParamList, TabTwoParamList,  } from '../types';
+import { MainTabParamList, TabOneParamList, TabTwoParamList,  } from '../types';
 
-const BottomTab = createBottomTabNavigator<BottomTabParamList>();
+const MainTab = createMateriailTopTabNavigator<MainTabParamList>();
 
-export default function BottomTabNavigator() {
+export default function MainTabNavigator() {
   const colorScheme = useColorScheme();
 
   return (
-    <BottomTab.Navigator
-      initialRouteName="TabOne"
-      tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
-      <BottomTab.Screen
-        name="TabOne"
-        component={TabOneNavigator}
+    <MainTab.Navigator
+      initialRouteName="chat"
+        tabBarOptions={{ activeTintColor: Colors[colorScheme].background,
+          style: {
+            backgroundColr: Colors[colorScheme].tint,
+          },
+          indicatorStyle: {
+            backgroundColor: Colors[colorScheme].background,
+            height: 5,
+          },
+          lableStyle: {
+            fontWeight: 'bold'
+          },
+          showIcon: true,
+      }}>
+      <MainTab.Screen
+        name="camera"
+        component={TabTwoNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="camera" color={color} />,
+          tabBarLabel: () => null
         }}
       />
-       <BottomTab.Screen
-        name="Chat"
-        component={ChatNavigator}
-        options={{
-          tabBarIcon: ({ color }) => <Ionicons name="ios-chatbubble-outline" size={30} color={color} />,
-        }}
-        
-      />
-      <BottomTab.Screen
-        name="TabTwo"
+      <MainTab.Screen
+        name="chat"
         component={TabTwoNavigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
         }}
       />
-    </BottomTab.Navigator>
+      <MainTab.Screen
+        name="status"
+        component={TabTwoNavigator}
+        // options={{
+        //   tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+        // }}
+      />
+      <MainTab.Screen
+        name="calls"
+        component={TabTwoNavigator}
+        // options={{
+        //   tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+        // }}
+      />
+    </MainTab.Navigator>
   );
 }
 
 // You can explore the built-in icon families and icons on the web at:
 // https://icons.expo.fyi/
 function TabBarIcon(props: { name: React.ComponentProps<typeof Ionicons>['name']; color: string }) {
-  return <Ionicons size={30} style={{ marginBottom: -3 }} {...props} />;
+  return <Ionicons size={30} style={{ marginMain: -3 }} {...props} />;
 }
 
 // Each tab has its own navigation stack, you can read more about this pattern here:
@@ -62,17 +82,6 @@ function TabOneNavigator() {
         name="TabOneScreen"
         component={TabOneScreen}
         options={{ headerTitle: 'Tab One Title' }}
-      />
-    </TabOneStack.Navigator>
-  );
-}
-function ChatNavigator() {
-  return (
-    <TabOneStack.Navigator>
-      <TabOneStack.Screen
-        name="ChatScreen"
-        component={ChatScreen}
-        options={{ headerTitle: {{name}} }}
       />
     </TabOneStack.Navigator>
   );

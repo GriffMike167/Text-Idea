@@ -6,7 +6,8 @@ import LoginScreen from './screens/LoginScreen';
 import ChatRoomScreen from './screens/ChatRoomScreen';
 // import ContactScreen from './screens/ContactsScreen';
 // import { Logout } from "./components/Logout";
-
+import Colors from "./constants/Colors" 
+import ChatScreen from "./screens/ChatScreen";
 
 
 // import { AuthProvider } from "./Providers/AuthProvider";
@@ -29,16 +30,16 @@ const App = () => {
       // headerLeft: <Logout /> 
     }}}>
           <Stack.Screen
-            name="Login"
-            component={LoginScreen}
-            options={{ title: "Login" }}
+            name="Chat"
+            component={ChatScreen}
+            options={{ title: "Messages" }}
           />
           <Stack.Screen
             name="ChatRoom"
             component={ChatRoomScreen}
             title="ChatRoom"
             headerBackTitle="log out"
-            options={({route}) => ({ title: route.params.name})} />
+            options={({route}) => ({ title: "Text"})} />
         
         
           {/* <Stack.Screen name="Contacts" component={ContactScreen}  /> */}
