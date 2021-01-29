@@ -1,4 +1,4 @@
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { createMainTabNavigator } from '@react-navigation/Main-tabs';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 import { createStackNavigator } from '@react-navigation/stack';
@@ -34,7 +34,7 @@ export default function MainTabNavigator() {
         name="camera"
         component={TabTwoNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="camera" color={color} />,
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="camera" color={color} size={28} />,
           tabBarLabel: () => null
         }}
       />
@@ -42,22 +42,24 @@ export default function MainTabNavigator() {
         name="chat"
         component={ChatScreen}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="chat" color={color} size={28} />,
+          tabBarLabel: () => null
         }}
       />
       <MainTab.Screen
         name="status"
         component={TabTwoNavigator}
         // options={{
-        //   tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+        //   tabBarIcon: ({ color }) => <MaterialCommunityIcons name="man" color={color} />,
         // }}
       />
       <MainTab.Screen
         name="calls"
         component={TabTwoNavigator}
-        // options={{
-        //   tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
-        // }}
+        options={{
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="phone" color={color} size={28} />,
+          tabBarLabel: () => null
+        }}
       />
     </MainTab.Navigator>
   );
