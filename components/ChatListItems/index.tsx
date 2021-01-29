@@ -11,10 +11,10 @@ export type ChatListItemsProps = {
     message: Message;
     user: User
 }
-const ChatListItem = () => {
+const ChatListItem = (props: ChatListItemsProps) => {
     const { chatRoom } = props
     const navigation = useNavigation();
-    const user = chatRoom.users[1];
+    const user = chatRoom.user[1];
     console.log(user.imageUri)
     const onClick = () => {
         navigation.navigate('ChatRoom', {id: chatRoom.id, name: user.name})

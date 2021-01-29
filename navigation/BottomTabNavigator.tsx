@@ -28,7 +28,7 @@ export default function BottomTabNavigator() {
       />
        <BottomTab.Screen
         name="Chat"
-        component={ChatScreen}
+        component={ChatNavigator}
         options={{
           tabBarIcon: ({ color }) => <Ionicons name="ios-chatbubble-outline" size={30} color={color} />,
         }}
@@ -62,6 +62,17 @@ function TabOneNavigator() {
         name="TabOneScreen"
         component={TabOneScreen}
         options={{ headerTitle: 'Tab One Title' }}
+      />
+    </TabOneStack.Navigator>
+  );
+}
+function ChatNavigator() {
+  return (
+    <TabOneStack.Navigator>
+      <TabOneStack.Screen
+        name="ChatScreen"
+        component={ChatScreen}
+        options={{ headerTitle: {{name}} }}
       />
     </TabOneStack.Navigator>
   );
