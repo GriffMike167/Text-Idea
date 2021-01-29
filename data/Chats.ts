@@ -3,11 +3,11 @@ export default {
     users: [{
         id:'u1',
         name: 'Michael',
-        imageUri: '/Users/Michael/repos/polyTextual/polyTextual/20.jpeg'
+        imageUri: 'assets/images/4.jpg'
     },{
         id:'u2',
         name:'Luka',
-        imageUri:'/Users/Michael/repos/polyTextual/polyTextual/22.jpeg'
+        imageUri:'assets/images/4.jpg'
     }],
     messages: [{
         id:'m1',

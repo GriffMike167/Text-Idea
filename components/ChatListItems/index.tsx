@@ -1,7 +1,8 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import ChatRooms from '../../data/ChatRooms';
 import { ChatRoom } from "../../types";
+import styles from './style';
 
 export type ChatListItemProps = {
     chatRoom: ChatRoom;
@@ -11,8 +12,10 @@ export type ChatListItemProps = {
 
 const ChatListItem = (props: ChatListItemProps) => {
     const { chatRoom } = props;
+    const user = chatRoom.users[1]
     return (
-        <View>
+        <View style={styles.container}>
+            <Image source={{ uri: user.imageUri }} style={styles.userUri}/>
             <Text>{chatRoom.lastMessage.content}</Text>
         </View>
     )
