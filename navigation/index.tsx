@@ -53,11 +53,27 @@ function RootNavigator() {
               
             }}>
               <Octicons name="search" size={24} color='#a9a9a9'/>
-              <MaterialCommunityIcons name='dots-horizontal' size={24} color='#a9a9a9'/>
+              <MaterialCommunityIcons name='dots-vertical' size={24} color='#a9a9a9'/>
             </View>
           )
         }}/>
-      <Stack.Screen name="ChatRoom" component={ChatRoomScreen} options={({route}) => ({ title: 'ChatRoom' })} />
+      <Stack.Screen name="ChatRoom" component={ChatRoomScreen} 
+              options={({route}) => ({ title: route.params.name, 
+                headerRight: () => (
+                  <View style={{
+                    flexDirection: 'row',
+                    width:100,
+                    justifyContent: 'space-between',
+                    marginRight: 10,
+                    
+                  }}>
+                  <MaterialCommunityIcons name="video" size={28} color={'#a9a9a9'} />
+                  <MaterialCommunityIcons name="call" size={28} color={'#a9a9a9'} />
+                  <MaterialCommunityIcons name="dot-vertical" size={28} color={'#a9a9a9'} />
+                  </View>
+                  
+                )}
+              )}  />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
   );

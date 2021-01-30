@@ -4,6 +4,7 @@ import ChatRooms from '../../data/ChatRooms';
 import { ChatRoom } from "../../types";
 import styles from './style';
 import moment from 'moment'
+import { useNavigation } from '@react-navigation/native';
 export type ChatListItemProps = {
     chatRoom: ChatRoom;
 
@@ -13,12 +14,24 @@ export type ChatListItemProps = {
 const ChatListItem = (props: ChatListItemProps) => {
     const { chatRoom } = props;
 
+    const navigation = useNavigation()
+    const user = chatRoom.users[1];
+    console.log(user.imageUri);
+
+
+
+
     const onClick = () => {
+        navigation.navigate('ChatRoom', {
+            id: chatRoom.id,
+            name: user.name,
+        })
         console.warn(`Clicked on ${user.name}`)
+        navigation.navigate('ChatRoom', { id: user.name })
+        console.log(chatRoom.id)
 
     }
-    const user = chatRoom.users[1];
-    console.log(user.imageUri)
+
     return (
        <TouchableWithoutFeedback onPress={onClick}>
         <View style={styles.container}>
