@@ -1,4 +1,4 @@
-import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import { AntDesign, FontAwesome, FontAwesome5, Fontisto, Ionicons, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 import { createMainTabNavigator } from '@react-navigation/Main-tabs';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 import { createStackNavigator } from '@react-navigation/stack';
@@ -31,10 +31,10 @@ export default function MainTabNavigator() {
           showIcon: true,
       }}>
       <MainTab.Screen
-        name="camera"
+        name="status"
         component={TabTwoNavigator}
         options={{
-          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="camera" color={color} size={28} />,
+          tabBarIcon: ({ color }) => <Fontisto name="persons" color={color} size={28} />,
           tabBarLabel: () => null
         }}
       />
@@ -42,16 +42,17 @@ export default function MainTabNavigator() {
         name="chat"
         component={ChatScreen}
         options={{
-          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="chat" color={color} size={28} />,
+          tabBarIcon: ({ color }) => <AntDesign name="wechat" color={color} size={28} />,
           tabBarLabel: () => null
         }}
       />
       <MainTab.Screen
-        name="status"
+        name="camera"
         component={TabTwoNavigator}
-        // options={{
-        //   tabBarIcon: ({ color }) => <MaterialCommunityIcons name="man" color={color} />,
-        // }}
+        options={{
+          tabBarIcon: ({ color }) => <FontAwesome5 name="camera-retro" color={color} size={28} />,
+          tabBarLabel: () => null
+        }}
       />
       <MainTab.Screen
         name="calls"

@@ -1,4 +1,4 @@
-import { MaterialCommunityIcons, Octicons } from '@expo/vector-icons';
+import { MaterialCommunityIcons, MaterialIcons, Octicons } from '@expo/vector-icons';
 import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
@@ -47,13 +47,14 @@ function RootNavigator() {
           headerRight: () => (
             <View style={{
               flexDirection: 'row',
-              width:60,
+              width:110,
               justifyContent: 'space-between',
               marginRight: 10,
               
             }}>
-              <Octicons name="search" size={24} color='#a9a9a9'/>
-              <MaterialCommunityIcons name='dots-vertical' size={24} color='#a9a9a9'/>
+              <MaterialIcons name="search" size={28} color='#a9a9a9'/>
+              <MaterialCommunityIcons name="facebook-messenger" size={28} color={'#a9a9a9'} />
+              <MaterialCommunityIcons name="instagram" size={28} color={'#a9a9a9'} />
             </View>
           )
         }}/>
@@ -62,14 +63,14 @@ function RootNavigator() {
                 headerRight: () => (
                   <View style={{
                     flexDirection: 'row',
-                    width:100,
+                    width:110,
                     justifyContent: 'space-between',
                     marginRight: 10,
                     
                   }}>
-                  <MaterialCommunityIcons name="video" size={28} color={'#a9a9a9'} />
-                  <MaterialCommunityIcons name="call" size={28} color={'#a9a9a9'} />
-                  <MaterialCommunityIcons name="dot-vertical" size={28} color={'#a9a9a9'} />
+                  <MaterialIcons name="camera-roll" size={20} color={'#a9a9a9'} />
+                  <MaterialCommunityIcons name="facebook-messenger" size={24} color={'#a9a9a9'} />
+                  <MaterialCommunityIcons name="instagram" size={24} color={'#a9a9a9'} />
                   </View>
                   
                 )}

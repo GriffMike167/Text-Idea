@@ -33,6 +33,8 @@ export type User = {
 export type Message = {
   id: String;
   content: String;
+  contentTwo: String,
+  imageCht: String,
   createdAt: String;
   user: User;
 }
