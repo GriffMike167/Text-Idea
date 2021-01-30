@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, ImagePropTypes, TextInput } from 'react-native';
+import { View, Text, ImagePropTypes, TextInput, KeyboardAvoidingView } from 'react-native';
 import styles from './styles';
 import { Entypo, FontAwesome5, Fontisto, MaterialCommunityIcons } from '@expo/vector-icons';
 import { TouchableOpacity } from 'react-native-gesture-handler';
@@ -25,23 +25,36 @@ const InputBox = () => {
         }
     }
     return (
+        <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"}
+        keyboardVerticalOffset={100}
+        style={{width: '100%'}}
+      >
         <View style={styles.container}>
-            <View style={styles.buttonContainerTwo}>
+            {/* <View style={styles.buttonContainerTwo}>
                 <FontAwesome5 name="laugh-beam" size={24} color='grey' />
-                </View>
+                </View> */}
             <View style={styles.mainContainer}>
                 <TextInput placeholder={'polyMessage'} style={styles.textInput} multiline 
                      value={message} onChangeText={setMessage} /> 
                {!message && <Entypo name='attachment' size={22} color='grey'style={styles.icons} />}
                 {!message && <MaterialCommunityIcons name='microphone' size={24} color='grey' style={styles.icons} />}
+                {!message && <FontAwesome5 name='laugh-beam' size={24} color='grey' style={styles.icons} />}
+
+                <TouchableOpacity onPress={onPress}>
+            <View style={styles.buttonContainer}>
+                {!message ? <MaterialCommunityIcons name="camera" size={24} color='grey' />
+                : <MaterialCommunityIcons name="send" size={25} color='grey' />}
             </View>
-            <TouchableOpacity>
+            </TouchableOpacity>
+            </View>
+            {/* <TouchableOpacity onPress={onPress}>
             <View style={styles.buttonContainer}>
                 {!message ? <MaterialCommunityIcons name="camera" size={22} color='grey' />
                 : <MaterialCommunityIcons name="send" size={25} color='grey' />}
             </View>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
         </View>
+        </KeyboardAvoidingView>
     )
 }
 
