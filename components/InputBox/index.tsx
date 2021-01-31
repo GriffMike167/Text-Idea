@@ -27,7 +27,7 @@ const InputBox = () => {
     return (
      
                <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"}
-        keyboardVerticalOffset={150}
+        keyboardVerticalOffset={100}
         style={{width: '100%'}}
       >
         <View style={styles.container}>

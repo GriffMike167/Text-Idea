@@ -6,7 +6,7 @@ const styles = StyleSheet.create ({
         margin: 10,
         alignItems: 'flex-end',
         justifyContent: 'space-between',
-        paddingTop: 9,
+        paddingTop: 6,
         paddingLeft: 17,
 
 
@@ -19,6 +19,7 @@ const styles = StyleSheet.create ({
         flex: 1,
         alignItems: 'flex-end',
         justifyContent: 'space-between',
+        
 
 
     },
@@ -26,7 +27,7 @@ const styles = StyleSheet.create ({
         flex: 1,
         marginHorizontal: 15,
         alignContent: 'center',
-        paddingBottom: 9,
+        paddingBottom: 12,
 
     },
     icons: {

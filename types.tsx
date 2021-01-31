@@ -13,7 +13,7 @@ export type MainTabParamList = {
   TabTwo: undefined;
   login: undefined
   chat: undefined;
-  staus: undefined;
+  Contacts: undefined;
   call: undefined
 };
 
