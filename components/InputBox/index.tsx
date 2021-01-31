@@ -3,7 +3,7 @@ import { View, Text, ImagePropTypes, TextInput, KeyboardAvoidingView, Platform }
 import styles from './styles';
 import { Entypo, FontAwesome5, Fontisto, MaterialCommunityIcons } from '@expo/vector-icons';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-
+import { Header } from '@react-navigation/stack';
 
 
 const InputBox = () => {
@@ -25,8 +25,9 @@ const InputBox = () => {
         }
     }
     return (
-        <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"}
-        keyboardVerticalOffset={100}
+     
+               <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"}
+        keyboardVerticalOffset={150}
         style={{width: '100%'}}
       >
         <View style={styles.container}>
@@ -55,6 +56,7 @@ const InputBox = () => {
             </TouchableOpacity> */}
         </View>
         </KeyboardAvoidingView>
+
     )
 }
 
