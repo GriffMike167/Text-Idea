@@ -5,21 +5,19 @@ const styles = StyleSheet.create ({
         flexDirection: 'row',
         margin: 10,
         alignItems: 'flex-end',
-        paddingLeft: 15,
         justifyContent: 'space-between',
+        paddingTop: 9,
+        paddingLeft: 17,
 
 
     },
     mainContainer: {
         flexDirection: 'row',
         backgroundColor: 'white',
-        padding: 5,
-        paddingBottom: 5,
         borderRadius: 25,
         marginRight: 20,
         flex: 1,
         alignItems: 'flex-end',
-        paddingLeft: 15,
         justifyContent: 'space-between',
 
 
@@ -28,11 +26,11 @@ const styles = StyleSheet.create ({
         flex: 1,
         marginHorizontal: 15,
         alignContent: 'center',
-        paddingBottom: 5,
+        paddingBottom: 9,
 
     },
     icons: {
-        marginHorizontal: 5,
+        marginHorizontal: 3,
         justifyContent: 'space-between',
 
     },

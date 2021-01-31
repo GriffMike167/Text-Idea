@@ -68,9 +68,9 @@ function RootNavigator() {
                     marginRight: 10,
                     
                   }}>
-                  <MaterialIcons name="camera-roll" size={20} color={'#a9a9a9'} />
-                  <MaterialCommunityIcons name="facebook-messenger" size={24} color={'#a9a9a9'} />
-                  <MaterialCommunityIcons name="instagram" size={24} color={'#a9a9a9'} />
+                  <MaterialIcons name="camera-roll" size={28} color={'#a9a9a9'} />
+                  <MaterialCommunityIcons name="facebook-messenger" size={28} color={'#a9a9a9'} />
+                  <MaterialCommunityIcons name="instagram" size={28} color={'#a9a9a9'} />
                   </View>
                   
                 )}

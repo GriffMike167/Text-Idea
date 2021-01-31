@@ -13,13 +13,13 @@ const styles = StyleSheet.create ({
         padding: 7, 
         backgroundColor: 'white',
         color: 'white',
-         shadowColor:'#000',
+         shadowColor:'#a9a9a9',
         shadowOffset: {
             width: 0,
-            height: 2,
+            height: 15,
         },
-        shadowOpacity: 0.1,
-        shadowRadius: 1.60
+        shadowOpacity: 5.4,
+        shadowRadius: 2.60
         
     
     },
