@@ -10,7 +10,9 @@ import { RootStackParamList } from '../types';
 import BottomTabNavigator from './MainTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
 import ChatRoomScreen from '../screens/ChatRoomScreen';
-import ContactScreen from '../screens/ChatRoomScreen';
+import ContactScreen from '../screens/ContactScreen';
+import NewUserScreen from '../screens/NewUserScreen';
+
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
@@ -77,7 +79,24 @@ function RootNavigator() {
                 )}
               )}  />
        <Stack.Screen name="Contacts" component={ContactScreen} 
-              options={({route}) => ({ title: route.params.name, 
+              options={({}) => ({  
+                headerRight: () => (
+                  <View style={{
+                    flexDirection: 'row',
+                    width:110,
+                    justifyContent: 'space-between',
+                    marginRight: 10,
+                    
+                  }}>
+                  <MaterialIcons name="search" size={28} color={'#a9a9a9'} />
+                  <MaterialCommunityIcons name="facebook-messenger" size={28} color={'#a9a9a9'} />
+                  <MaterialCommunityIcons name="instagram" size={28} color={'#a9a9a9'} />
+                  </View>
+                  
+                )}
+              )}  />
+              <Stack.Screen name="NewUser" component={NewUserScreen} 
+              options={({}) => ({  
                 headerRight: () => (
                   <View style={{
                     flexDirection: 'row',
