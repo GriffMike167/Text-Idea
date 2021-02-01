@@ -34,14 +34,14 @@ const NewUserItem = () => {
                     size={80}
                     color="grey" placeholder="user image"/>
             </TouchableOpacity>
-        </View><><View style={styles.container}>
+        </View><><View style={styles.middleContainer}>
             <TextInput
                 style={{ height: 40, borderColor: 'grey', borderWidth: 1 }}
                 onChangeText={text => onChangeText(text)}
                 value={value}
                 placeholder='Name' />
 
-        </View><View style={styles.container}>
+        </View><View style={styles.middleContainer}>
                     <TextInput
                         style={{ height: 40, borderColor: 'grey', borderWidth: 1 }}
                         onChangeText={text => onChangeText(text)}
@@ -50,11 +50,11 @@ const NewUserItem = () => {
 
                 </View>
                 <View style={styles.container}>
-                    <TextInput
+                    {/* <TextInput
                         style={{ height: 40, borderColor: 'grey', borderWidth: 1 }}
                         onChangeText={text => onChangeText(text)}
                         value={value}
-                        placeholder='User Image' />
+                        placeholder='User Image' /> */}
                 </View></>
             <View style={styles.middleContainer}>
             <TextInput

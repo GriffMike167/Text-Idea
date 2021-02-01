@@ -8,18 +8,14 @@ const styles = StyleSheet.create ({
         marginRight: 10
     },
     container: {
-        // flexDirection: 'row',
+        flexDirection: 'row',
         width: '100%',
         padding: 7, 
         backgroundColor: 'white',
         color: 'white',
-         shadowColor:'#a9a9a9',
-        shadowOffset: {
-            width: 0,
-            height: 15,
-        },
-        shadowOpacity: 5.4,
-        shadowRadius: 2.60
+        justifyContent: 'space-around',
+
+      
         
     
     },
@@ -35,13 +31,9 @@ const styles = StyleSheet.create ({
         padding: 7,
         backgroundColor: 'white',
         color: 'white',
-         shadowColor:'#a9a9a9',
-        shadowOffset: {
-            width: 0,
-            height: 15,
-        },
-        shadowOpacity: 5.4,
-        shadowRadius: 2.60
+        justifyContent: 'space-around',
+
+       
        
      
     },

@@ -1,7 +1,7 @@
 export default [{
     id: 'u1',
     name: 'Michael',
-    imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+    imageUri: '/Users/Michael/repos/textproject/assets/images/17.jpeg',
     fb:"Facebook",
     insta:"Instagram",
     status: "Hello there, how are you"
@@ -16,32 +16,32 @@ export default [{
   }, {
     id: 'u3',
     name: 'James',
-    imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+    imageUri: '/Users/Michael/repos/textproject/assets/images/11.jpg',
     fb:"Facebook",
     insta:"Instagram"
   }, {
     id: 'u4',
     name: 'Jay',
-    imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+    imageUri: '/Users/Michael/repos/textproject/assets/images/386860.jpg',
     fb:"Facebook",
     insta:"Instagram"
   }, {
     id: 'u5',
     name: 'Tom',
-    imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+    imageUri: '/Users/Michael/repos/textproject/assets/images/10.jpeg',
     status: "Just leaving  wrok!!!!!",
     fb:"Facebook",
     insta:"Instagram"
   }, {
     id: 'u6',
     name: 'Brady',
-    imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+    imageUri: '/Users/Michael/repos/textproject/assets/images/17.jpeg',
     fb:"Facebook",
     insta:"Instagram"
   }, {
     id: 'u7',
     name: 'Adrian',
-    imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+    imageUri: '/Users/Michael/repos/textproject/assets/images/3.jpeg',
     fb:"Facebook",
     insta:"Instagram"
   }, {
@@ -54,7 +54,7 @@ export default [{
   }, {
     id: 'u9',
     name: 'Mom',
-    imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+    imageUri: '/Users/Michael/repos/textproject/assets/images/3.jpeg',
     fb:"Facebook",
     insta:"Instagram",
   }, 
@@ -73,8 +73,8 @@ export default [{
     insta:"Instagram",
   }, {
     id: 'u12',
-    name: 'Jeff',
-    imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+    name: 'Dad',
+    imageUri: '/Users/Michael/repos/textproject/assets/images/1.jpg',
     fb:"Facebook",
     insta:"Instagram",
   }, {
@@ -88,7 +88,7 @@ export default [{
 {
   id: 'u15',
   name: 'Christop',
-  imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+  imageUri: '/Users/Michael/repos/textproject/assets/images/3.jpeg',
   status: "Just Hanging in the Clouds!",
   fb:"Facebook",
     insta:"Instagram",
@@ -98,7 +98,7 @@ export default [{
  {
   id: 'u17',
   name: 'Joe',
-  imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+  imageUri: '/Users/Michael/repos/textproject/assets/images/11.jpg',
   fb:"Facebook",
   insta:"Instagram",
 }, 
@@ -106,26 +106,34 @@ export default [{
 {
   id: 'u19',
   name: 'Christie',
-  imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+  imageUri: '/Users/Michael/repos/textproject/assets/images/16.jpeg',
   fb:"Facebook",
   insta:"Instagram",
 }, {
   id: 'u20',
   name: 'Adrian',
-  imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+  imageUri: '/Users/Michael/repos/textproject/assets/images/386860.jpg',
+  fb:"Facebook",
+  insta:"Instagram",
 }, {
   id: '21',
   name: 'Steve',
-  imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
-  status: "Start Vacation Tomorrow!"
+  imageUri: '/Users/Michael/repos/textproject/assets/images/17.jpeg',
+  status: "Start Vacation Tomorrow!",
+  fb:"Facebook",
+  insta:"Instagram",
 }, {
   id: 'u22',
   name: 'Alex',
-  imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+  imageUri: '/Users/Michael/repos/textproject/assets/images/10.jpeg',
+  fb:"Facebook",
+  insta:"Instagram",
 }, {
   id: 'u23',
   name: 'Joel',
-  imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+  imageUri: '/Users/Michael/repos/textproject/assets/images/7.jpeg',
+  fb:"Facebook",
+  insta:"Instagram",
 },
 
 ]

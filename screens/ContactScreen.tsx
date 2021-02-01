@@ -16,6 +16,7 @@ export default function ContactScreen() {
           <FlatList data={contacts} renderItem={({ item }) =>
           <ContactItem contacts={item} />}
           keyExtractor={( item ) => item.id} />
+          <NewUserButton />
         </View>
 
     )
