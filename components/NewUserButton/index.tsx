@@ -9,7 +9,7 @@ const NewUserButton = () => {
   const navigation = useNavigation();
 
   const onPress = () => {
-    navigation.navigate('Contacts');
+    navigation.navigate('AddUser');
   }
 
   return (

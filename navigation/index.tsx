@@ -11,7 +11,7 @@ import BottomTabNavigator from './MainTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
 import ChatRoomScreen from '../screens/ChatRoomScreen';
 import ContactScreen from '../screens/ContactScreen';
-import NewUserScreen from '../screens/NewUserScreen';
+import AddUserScreen from '../screens/AddUserScreen';
 
 
 // If you are not familiar with React Navigation, we recommend going through the
@@ -95,7 +95,7 @@ function RootNavigator() {
                   
                 )}
               )}  />
-              <Stack.Screen name="NewUser" component={NewUserScreen} 
+              <Stack.Screen name="AddUser" component={AddUserScreen} 
               options={({}) => ({  
                 headerRight: () => (
                   <View style={{
