@@ -6,15 +6,16 @@ import chatRooms from '../data/ChatRooms'
 import NewMessageButton from '../components/NewMessageButton';
 import contacts from '../data/Contacts';
 import NewUserButton from '../components/NewUserButton';
+import  ContactItem from '../components/ContactListItems'
+
 
 
 export default function ContactScreen() {
     return (
         <View style={styles.container}>
-          <FlatList data={chatRooms} renderItem={({ item }) =>
-          <ChatListItem chatRoom={item} />}
+          <FlatList data={contacts} renderItem={({ item }) =>
+          <ContactItem contacts={item} />}
           keyExtractor={( item ) => item.id} />
-          <NewUserButton />
         </View>
 
     )

@@ -30,7 +30,9 @@ export type User = {
   name: String;
   imageUri: String;
   status: String;
-  phone: Number
+  phone: Number;
+  fb: String;
+  insta: String
 }
 export type Message = {
   id: String;
