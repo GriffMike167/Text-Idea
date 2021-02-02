@@ -46,7 +46,7 @@ function RootNavigator() {
     }}>
       <Stack.Screen name="Root" component={BottomTabNavigator} 
         options={{
-          title: 'polyText',
+          title: 'polyMessage',
           headerRight: () => (
             <View style={{
               flexDirection: 'row',
