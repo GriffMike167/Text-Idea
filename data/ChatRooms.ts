@@ -96,7 +96,7 @@ export default [{
         imageUri: '/Users/Michael/repos/polyTextual/polyTextual/20.jpeg'
     },{
         id:'u7',
-        name:'Peyton',
+        name:'John',
         imageUri:'/Users/Michael/repos/textproject/assets/images/7.jpeg'
     }],
     lastMessage: {

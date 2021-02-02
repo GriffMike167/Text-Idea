@@ -5,7 +5,21 @@ export default [{
     fb:"Facebook",
     insta:"Instagram",
     status: "Hello there, how are you"
+  }, 
+  {
+    id: 'u25',
+    name: 'William',
+    imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
+    fb:"Facebook",
+    insta:"Instagram",
   }, {
+    id: 'u26',
+    name: 'Dirk',
+    imageUri: '/Users/Michael/repos/textproject/assets/images/17.jpeg',
+    fb:"Facebook",
+    insta:"Instagram",
+  },
+  {
     id: 'u2',
     name: 'Luka',
     imageUri: '/Users/Michael/repos/textproject/assets/images/4.jpg',
